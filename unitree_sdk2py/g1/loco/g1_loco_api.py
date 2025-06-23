@@ -26,6 +26,9 @@ ROBOT_API_ID_LOCO_SET_SWING_HEIGHT = 7103
 ROBOT_API_ID_LOCO_SET_STAND_HEIGHT = 7104
 ROBOT_API_ID_LOCO_SET_VELOCITY = 7105
 ROBOT_API_ID_LOCO_SET_ARM_TASK = 7106
+# const int32_t ROBOT_API_ID_LOCO_SET_SPEED_MODE = 7107;??
+# https://github.com/unitreerobotics/unitree_sdk2/blob/main/include/unitree/robot/g1/loco/g1_loco_api.hpp#L30
+ROBOT_API_ID_LOCO_SET_SPEED_MODE = 7107
 
 """
 " error code
