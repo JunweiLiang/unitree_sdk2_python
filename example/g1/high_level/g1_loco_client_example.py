@@ -139,7 +139,7 @@ if __name__ == "__main__":
             # vx, vy, vyaw, duration
             # 向左转
             # vyaw, 3.14是一圈
-            sport_client.SetVelocity(0, 0, 1.0, 2.0)
+            sport_client.SetVelocity(0, 0, 1.0, 1.5)
 
         elif test_option.id == 18:
             sport_client.SetSpeedMode(0)
