@@ -138,7 +138,7 @@ if __name__ == "__main__":
         elif test_option.id == 17:
             # vx, vy, vyaw, duration
             # 向左转
-            sport_client.SetVelocity(0, 0, 0.3, 4.0)
+            sport_client.SetVelocity(0, 0, 1.0, 4.0)
 
         elif test_option.id == 18:
             sport_client.SetSpeedMode(0)
