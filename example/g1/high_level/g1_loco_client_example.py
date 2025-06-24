@@ -129,6 +129,7 @@ if __name__ == "__main__":
             sport_client.SetNormalWalkMode()
         elif test_option.id == 15:
             # vx, vy, vyaw, duration
+            # 走跑运控下，sport_client.SetVelocity(1.0, 0, 0, 2.0)走了大概1.8米
             sport_client.SetVelocity(1.0, 0, 0, 2.0)
 
         elif test_option.id == 16:
@@ -139,8 +140,9 @@ if __name__ == "__main__":
             # vx, vy, vyaw, duration
             # 向左转
             # vyaw, 3.14是一圈
-            sport_client.SetVelocity(0, 0, 1.0, 1.5)
+            sport_client.SetVelocity(0, 0, 1.0, 1.6) # 向左转90度左右
 
+        # [06/24/2025] 测试set speed mode无效果，用setvelocity能控制走跑速度
         elif test_option.id == 18:
             sport_client.SetSpeedMode(0)
 
