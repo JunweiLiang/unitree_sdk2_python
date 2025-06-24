@@ -74,6 +74,7 @@ class LocoClient(Client):
         return code
 
     # 7107 added by junwei
+    # 官方回复：0，1，2，3，填入这四个速度档位即可，没有精确的速度值, 这个地方没有做速度闭环控制
     def SetSpeedMode(self, speed_mode: int):
         p = {}
         p["data"] = speed_mode

@@ -29,7 +29,13 @@ option_list = [
     # added by Junwei, 走跑运控
     TestOption(name="Run Walk mode", id=13),
     TestOption(name="Normal mode", id=14),
+
     TestOption(name="move forward fast", id=15),
+    TestOption(name="move forward slow", id=16),
+    TestOption(name="turn left", id=17),
+
+    TestOption(name="Set Speed mode 0", id=18),
+    TestOption(name="Set Speed mode 3", id=19),
 ]
 
 class UserInterface:
@@ -124,5 +130,21 @@ if __name__ == "__main__":
         elif test_option.id == 15:
             # vx, vy, vyaw, duration
             sport_client.SetVelocity(1.0, 0, 0, 2.0)
+
+        elif test_option.id == 16:
+            # vx, vy, vyaw, duration
+            sport_client.SetVelocity(0.5, 0, 0, 2.0)
+
+        elif test_option.id == 17:
+            # vx, vy, vyaw, duration
+            # 向左转
+            sport_client.SetVelocity(0, 0, 0.3, 4.0)
+
+        elif test_option.id == 18:
+            sport_client.SetSpeedMode(0)
+
+        elif test_option.id == 19:
+            sport_client.SetSpeedMode(3)
+
 
         time.sleep(1)
